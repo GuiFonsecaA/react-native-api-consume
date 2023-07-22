@@ -6,7 +6,11 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "lint": "eslint ./src --ext .tsx",
+    "lint:fix": "eslint ./src --ext .tsx --fix",
+    "style:check": "prettier --check 'src/**/*.tsx'",
+    "style:fix": "prettier --write 'src/**/*.tsx'"
   },
   "dependencies": {
     "expo": "~48.0.18",
